@@ -1,9 +1,12 @@
+# encoding: utf-8
+
 require 'rubygems'
 require 'parallel'
 require 'open-uri'
 require 'nokogiri'
 require 'sqlite3'
 require 'yaml'
+require 'pp'
 
 def loadconfig
 	argfiles = ARGF.read()
