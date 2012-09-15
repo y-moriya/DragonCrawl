@@ -1,0 +1,5 @@
+parallels_of_degrees: 10 #並列処理数。10*この数だけの商品情報をぶんどってくるよ。
+db: # DBのパスをフルパスで書いてね
+createsql: create table _database_ (id integer not null primary key,name varchar(128),number integer,star varchar(64),amount integer,username varchar(8),userid varchar(128),continent varchar(64),fromdate varchar(32),todate varchar(32),unitprice integer,created_at varchar(64))
+createsummarysql: create table _database_ (created_at varchar(64) primary key,name varchar(128),number real,amount real,unitprice real,totalcount integer)
+cookie: '' # 広場にログインするためのクッキー文字列
